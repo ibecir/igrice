@@ -3,6 +3,6 @@
 include 'includes/header.php';
 include 'includes/footer.php';
 
-Becko
+echo 'Becir Isakovic';
 
 ?>
