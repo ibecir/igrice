@@ -7,6 +7,9 @@ ini_set('display_errors', 0);
 session_start();
 header('Access-Control-Allow-Origin: *');
 
+
+
+
 $arr = explode ( "/", $_GET [send] );
 
 $page = $arr [0];
@@ -15,7 +18,7 @@ $id = $arr [2];
 
 
 switch ($page) {
-	case 'becko' :
+	case '' :
 		include_once 'home/index.php';
 		break;
 	default :
