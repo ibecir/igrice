@@ -2,7 +2,6 @@
 <FilesMatch "\.(gif|jpg|jpeg|png|css|js|ico|ttf|ttc|otf|eot|woff|woff2|font.css)$">
 #ExpiresDefault "access plus 1 month"
 #Header append Cache-Control "public"
-Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
 
 
@@ -16,5 +15,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !\.(png|jpg|js|css|jpeg|html|htm)$
 
 RewriteRule ^(.*)$ index.php?send=$1 [L,QSA]
-
-Header set Access-Control-Allow-Origin "*"
