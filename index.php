@@ -15,7 +15,7 @@ $id = $arr [2];
 
 
 switch ($page) {
-	case '' :
+	case 'becko' :
 		include_once 'home/index.php';
 		break;
 	default :
