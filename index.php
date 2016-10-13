@@ -19,10 +19,10 @@ $id = $arr [2];
 
 switch ($page) {
 	case '' :
-		include_once 'views/index.php';
+		include_once 'home/index.php';
 		break;
 	default :
-		include_once 'views/index.php';
+		include_once 'home/index.php';
 		break;
 }
 ?>
