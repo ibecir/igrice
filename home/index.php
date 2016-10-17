@@ -1,4 +1,9 @@
 <?php
-echo "sve je u dure";
+
+//$result=DB::Instance()->get_all_games();
+//print_r($result);
+include_once 'includes/header.php';
+include_once 'home/views/index.php';
+include_once 'includes/footer.php';
 
 ?>

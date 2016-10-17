@@ -6,6 +6,8 @@ ini_set('display_errors', 0);
 
 session_start();
 header('Access-Control-Allow-Origin: *');
+include_once 'config.php';
+include_once 'db/db.php';
 
 $arr = explode ( "/", $_GET [send] );
 
