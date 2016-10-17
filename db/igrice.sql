@@ -23,9 +23,10 @@ DROP TABLE IF EXISTS `igrice`;
 CREATE TABLE `igrice` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(256) NOT NULL,
-  `game_url` varchar(256) NOT NULL,
+  `game_source` text NOT NULL,
   `icon_url` varchar(256) NOT NULL,
   `description` varchar(256) NOT NULL,
+  `category` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
