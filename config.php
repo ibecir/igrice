@@ -4,7 +4,14 @@ if($_SERVER['SERVER_ADMIN']=='postmaster@localhost'){
 	define(BASE_URL, "http://localhost:8080/igrice/");
 	define(USERNAME, "root");
 	define(PASS, "eldiablo");
-	define(DB, "igrice");
+	define(DB, "games");
+	define(HOST, "localhost");
+}
+else if($_SERVER['SERVER_ADMIN']=='webmaster@localhost'){
+	define(BASE_URL, "http://localhost:80/igrice/");
+	define(USERNAME, "root");
+	define(PASS, "root");
+	define(DB, "games");
 	define(HOST, "localhost");
 }
 else {
