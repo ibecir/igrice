@@ -17,6 +17,12 @@
 <link href="<?echo BASE_URL?>/core/css/slick.css" rel="stylesheet" type="text/css">
 <link href="<?echo BASE_URL?>/core/css/slick-theme.css" rel="stylesheet" type="text/css">
 
+<script src="<?echo BASE_URL?>core/js/jquery.js"></script>
+<script src="<?echo BASE_URL?>core/js/bootstrap.min.js"></script>
+<script src="<?echo BASE_URL?>core/js/slick.min.js"></script>
+
+<script src="core/js/triger.js"></script>
+
 <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
 
 </head>
