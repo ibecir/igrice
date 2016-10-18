@@ -2,8 +2,10 @@
 <section id="main-slider-section" style="padding-bottom: 50px;">
 	<!--start banner section-->
 	<div id="banner-slider">
-		<div class="banner-item" style="background-image: url(core/images/slider1.jpg);">
-			<img src="core/images/slider1.jpg" height="500" class="img-responsive" alt="" />
+		<div class="banner-item"
+			style="background-image: url(core/images/slider1.jpg);">
+			<img src="core/images/slider1.jpg" height="500"
+				class="img-responsive" alt="" />
 			<div class="slider-over-opacity"></div>
 			<div class="container">
 				<div class="banner-stye2-content banner-style3-content">

@@ -1,6 +1,6 @@
 /*
 SQLyog Ultimate v11.11 (64 bit)
-MySQL - 5.7.15-0ubuntu0.16.04.1 : Database - igrice
+MySQL - 5.7.15-0ubuntu0.16.04.1 : Database - games
 *********************************************************************
 */
 
@@ -12,21 +12,31 @@ MySQL - 5.7.15-0ubuntu0.16.04.1 : Database - igrice
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`igrice` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`games` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `igrice`;
+USE `games`;
 
-/*Table structure for table `igrice` */
+/*Table structure for table `categories` */
 
-DROP TABLE IF EXISTS `igrice`;
+DROP TABLE IF EXISTS `categories`;
 
-CREATE TABLE `igrice` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `categories` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Table structure for table `games` */
+
+DROP TABLE IF EXISTS `games`;
+
+CREATE TABLE `games` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(256) NOT NULL,
   `game_source` text NOT NULL,
-  `icon_url` varchar(256) NOT NULL,
-  `description` varchar(256) NOT NULL,
-  `category` varchar(100) NOT NULL,
+  `icon` blob NOT NULL,
+  `description` text NOT NULL,
+  `category_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
