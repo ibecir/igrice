@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Loading Bootstrap -->
-<link href="core/css/bootstrap.css" rel="stylesheet">
-<link href="core/css/style.css" rel="stylesheet">
-<link href="core/css/color.css" rel="stylesheet">
-<link href="core/css/responsive.css" rel="stylesheet">
+<link href="<?echo BASE_URL?>/core/css/bootstrap.css" rel="stylesheet">
+<link href="<?echo BASE_URL?>/core/css/style.css" rel="stylesheet">
+<link href="<?echo BASE_URL?>/core/css/color.css" rel="stylesheet">
+<link href="<?echo BASE_URL?>/core/css/responsive.css" rel="stylesheet">
 
 <!-- Font Awesome -->
-<link href="core/css/font-awesome.css" rel="stylesheet">
-<link href="core/css/slick.css" rel="stylesheet" type="text/css">
-<link href="core/css/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="<?echo BASE_URL?>/core/css/font-awesome.css" rel="stylesheet">
+<link href="<?echo BASE_URL?>/core/css/slick.css" rel="stylesheet" type="text/css">
+<link href="<?echo BASE_URL?>/core/css/slick-theme.css" rel="stylesheet" type="text/css">
 
 <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
 

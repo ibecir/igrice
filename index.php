@@ -20,6 +20,9 @@ switch ($page) {
 	case 'becko' :
 		include_once 'home/index.php';
 		break;
+	case 'admin' :
+		include_once 'admin/index.php';
+		break;
 	default :
 		include_once 'home/index.php';
 		break;

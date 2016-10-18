@@ -52,21 +52,21 @@
 		<div class="row margin-bottom-70">
 			<div class="slick-image-slider-4 slider0  slick-slider">
 				<?php for($i=0;$i<8;$i++):?>
-				<div class="col-md-3 col-sm-3 col-xs-12">
-					<div class="post-details">
-						<div class="overlay-inner-image">
-							<img src="core/images/staff/1.png" alt="" /> <a href="detailpage.html" class="inner-image-overlay"></a>
-							<div class="watch-icon" data-toggle="tooltip" title="Watch on YouTube">
-								<a target="blank" href="https://www.youtube.com/watch?v=5Bf6dnEnsXw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<div class="col-md-3 col-sm-3 col-xs-12">
+						<div class="post-details">
+							<div class="overlay-inner-image">
+								<img src="core/images/staff/1.png" alt="" /> <a href="detailpage.html" class="inner-image-overlay"></a>
+								<div class="watch-icon" data-toggle="tooltip" title="Watch on YouTube">
+									<a target="blank" href="https://www.youtube.com/watch?v=5Bf6dnEnsXw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+								</div>
+							</div>
+							<div class="image-content background-color-light-green">
+								<h3>
+									<a href="">Won’t Look Back</a>
+								</h3>
 							</div>
 						</div>
-						<div class="image-content background-color-light-green">
-							<h3>
-								<a href="">Won’t Look Back</a>
-							</h3>
-						</div>
 					</div>
-				</div>
 				<?php endfor;?>
 			</div>
 		</div>
