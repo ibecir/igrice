@@ -75,7 +75,7 @@
 						</div>
 						<div class="image-content background-color-light-green">
 							<h3>
-								<a href="">Won�t Look Back</a>
+								<a href="">Do not look back</a>
 							</h3>
 						</div>
 					</div>
