@@ -11,10 +11,10 @@
 <link href="<? echo BASE_URL ?>core/css/color.css" rel="stylesheet">
 <link href="<? echo BASE_URL ?>core/css/responsive.css" rel="stylesheet">
 <!-- Font Awesome -->
-<link href="<? echo BASE_URL; ?>core/css/font-awesome.css" rel="stylesheet">
-<link href="<? echo BASE_URL; ?>core/css/slick.css" rel="stylesheet" type="text/css">
-<link href="<? echo BASE_URL; ?>core/css/slick-theme.css" rel="stylesheet" type="text/css">
-<link rel="<? echo BASE_URL; ?>core/shortcut icon" href="images/favicon.ico">
+<link href="<? BASE_URL; ?>core/css/font-awesome.css" rel="stylesheet">
+<link href="<? BASE_URL; ?>core/css/slick.css" rel="stylesheet" type="text/css">
+<link href="<? BASE_URL; ?>core/css/slick-theme.css" rel="stylesheet" type="text/css">
+<link rel="<? BASE_URL; ?>core/shortcut icon" href="images/favicon.ico">
 
 <script src="<? echo BASE_URL;?>core/js/bootstrap.min.js"></script>
 
