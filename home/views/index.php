@@ -75,7 +75,7 @@
 						</div>
 						<div class="image-content background-color-light-green">
 							<h3>
-								<a href="">Won�t Look Back</a>
+								<a href="">Do not look back</a>
 							</h3>
 						</div>
 					</div>
@@ -84,16 +84,4 @@
 			</div>
 		</div>
 	</div>
-</div>
-
-<div class="dropdown">
-	<button class="btn btn-primary dropdown-toggle" type="button"
-		data-toggle="dropdown">
-		Dropdown Example <span class="caret"></span>
-	</button>
-	<ul class="dropdown-menu">
-		<li><a href="#">HTML</a></li>
-		<li><a href="#">CSS</a></li>
-		<li><a href="#">JavaScript</a></li>
-	</ul>
 </div>
