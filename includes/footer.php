@@ -110,9 +110,9 @@
 </div>
 
 <!--Load JS here for greater good=============================-->
-<script src="core/js/jquery.js"></script>
-<script src="core/js/bootstrap.min.js"></script>
-<script src="core/js/slick.min.js"></script>
+<script src="<? echo BASE_URL;?>core/js/jquery.js"></script>
+<script src="<? echo BASE_URL;?>core/js/bootstrap.min.js"></script>
+<script src="<? echo BASE_URL;?>core/js/slick.min.js"></script>
 
 <script src="core/js/triger.js"></script>
 <script>
