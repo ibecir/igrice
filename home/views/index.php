@@ -4,7 +4,7 @@
 	<div id="banner-slider">
 		<div class="banner-item"
 			style="background-image: url(core/images/slider1.jpg);">
-			<img src="core/images/slider1.jpg" height="500"
+			<img src="<?php echo BASE_URL?>core/images/slider1.jpg" height="500"
 				class="img-responsive" alt="" />
 			<div class="slider-over-opacity"></div>
 			<div class="container">
@@ -27,8 +27,8 @@
 			</div>
 		</div>
 		<div class="banner-item"
-			style="background-image: url(core/images/slider2.jpg);">
-			<img src="core/images/slider2.jpg" height="500"
+			style="background-image: url(<?php echo BASE_URL?>core/images/slider2.jpg);">
+			<img src="<?php echo BASE_URL?>core/images/slider2.jpg" height="500"
 				class="img-responsive" alt="" />
 			<div class="slider-over-opacity"></div>
 			<div class="container">
@@ -64,7 +64,7 @@
 					<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="post-details">
 						<div class="overlay-inner-image">
-							<img src="core/images/staff/1.png" alt="" /> <a
+							<img src="<?php echo BASE_URL?>core/images/staff/1.png" alt="" /> <a
 								href="detailpage.html" class="inner-image-overlay"></a>
 							<div class="watch-icon" data-toggle="tooltip"
 								title="Watch on YouTube">
