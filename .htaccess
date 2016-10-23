@@ -10,10 +10,13 @@ Header set Access-Control-Allow-Origin "*"
 Options -Indexes
 
 RewriteEngine on
-RewriteRule ^(.*)$ index.php?send=$1 [L,QSA]
+
+
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?send=$1 [L,QSA]
+
 RewriteCond %{REQUEST_URI} !\.(png|jpg|js|css|jpeg|html|htm)$
+
 
 
 

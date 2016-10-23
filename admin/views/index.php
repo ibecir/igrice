@@ -1,4 +1,4 @@
-<div class="container">
+<div style="margin-top: 50px;" class="container">
 	<form action="" method="post" name="add_game">
 		<div class="form-group row">
 			<label for="name" class="col-xs-2 col-form-label">Name: </label>
@@ -25,18 +25,16 @@
 			</div>
 		</div>
 		<div class="form-group row">
-			<label class="col-xs-2 col-form-label">Category</label>
+			<label for="description" class="col-xs-2 col-form-label">Category</label>
 			<div class="col-xs-10">
-				<div class="dropdown clearfix">
-					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						Category <span class="caret"></span>
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+						Dropdown Example <span class="caret"></span>
 					</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Separated link</a></li>
+					<ul class="dropdown-menu">
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">JavaScript</a></li>
 					</ul>
 				</div>
 			</div>

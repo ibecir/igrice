@@ -8,40 +8,40 @@
 	</div>
 	<div class="instagram-images clearfix">
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/1.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/1.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/2.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/2.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/3.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/3.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/4.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/4.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/5.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/5.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/6.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/6.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/7.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/7.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/8.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/8.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/9.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/9.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/10.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/10.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/11.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/11.jpg" alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="core/images/flicker/12.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/12.jpg" alt="" /></a>
 		</div>
 	</div>
 	<div class="container">
@@ -61,7 +61,7 @@
 				<div class="widgets">
 
 					<div class="footer-logo">
-						<a href=""><img src="core/images/ftlogo.png" alt="" /></a>
+						<a href=""><img src="<? echo BASE_URL?>core/images/ftlogo.png" alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -85,9 +85,9 @@
 			</div>
 			<div class="col-md-2 col-sm-2 col-xs-12">
 				<div class="widgets app-logos">
-					<a href=""><img src="core/images/l1.png" alt="" /></a> <a href=""><img
-						src="core/images/l2.png" alt="" /></a> <a href=""><img
-						src="core/images/l3.png" alt="" /></a>
+					<a href=""><img src="<?php echo BASE_URL?>core/images/l1.png" alt="" /></a> <a href=""><img
+						src="<?php echo BASE_URL?>core/images/l2.png" alt="" /></a> <a href=""><img
+						src="<?php echo BASE_URL?>core/images/l3.png" alt="" /></a>
 				</div>
 			</div>
 		</div>
@@ -110,11 +110,7 @@
 </div>
 
 <!--Load JS here for greater good=============================-->
-<script src="<? echo BASE_URL;?>core/js/jquery.js"></script>
-<script src="<? echo BASE_URL;?>core/js/bootstrap.min.js"></script>
-<script src="<? echo BASE_URL;?>core/js/slick.min.js"></script>
 
-<script src="core/js/triger.js"></script>
 <script>
 		$(document).ready(function(){	
 		 "use strict";

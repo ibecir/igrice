@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Loading Bootstrap -->
-<link href="<? echo BASE_URL ?>core/css/bootstrap.css" rel="stylesheet">
+<script src="<? echo BASE_URL;?>core/js/jquery.js"></script>
 <link href="<? echo BASE_URL ?>core/css/style.css" rel="stylesheet">
 <link href="<? echo BASE_URL ?>core/css/color.css" rel="stylesheet">
 <link href="<? echo BASE_URL ?>core/css/responsive.css" rel="stylesheet">
@@ -16,6 +16,13 @@
 <link href="<? echo BASE_URL; ?>core/css/slick-theme.css" rel="stylesheet" type="text/css">
 <link rel="<? echo BASE_URL; ?>core/shortcut icon" href="images/favicon.ico">
 
+<script src="<? echo BASE_URL;?>core/js/bootstrap.min.js"></script>
+
+
+<script src="<? echo BASE_URL;?>core/js/slick.min.js"></script>
+
+<script src="<?php echo BASE_URL?>core/js/triger.js"></script>
+<link href="<? echo BASE_URL ?>core/css/bootstrap.css" rel="stylesheet">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
