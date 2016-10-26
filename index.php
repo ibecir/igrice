@@ -1,8 +1,8 @@
  <?php
 header('Access-Control-Allow-Headers: *');
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+error_reporting(0);
+ini_set('display_errors', 0);
 
 session_start();
 header('Access-Control-Allow-Origin: *');
@@ -15,14 +15,12 @@ $page = $arr [0];
 $action = $arr [1];
 $id = $arr [2];
 
-echo BASE_URL;
-
 switch ($page) {
 	case 'play' :
 		include_once 'home/play.php';
 		break;
 	case 'admin' :
-		include_once 'admin/index.php';
+		include_once 'home/admin.php';
 		break;
 	default :
 		include_once 'home/index.php';

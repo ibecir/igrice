@@ -5,16 +5,17 @@
 <title>videofy videos theme</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Font Awesome -->
+<link rel="stylesheet" type="text/css" href="<? BASE_URL; ?>core/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="<? BASE_URL; ?>core/css/slick.css">
+<link href="<? BASE_URL; ?>core/css/slick-theme.css" rel="stylesheet" type="text/css">
+<link rel="<? BASE_URL; ?>core/shortcut icon" href="images/favicon.ico">
+
 <!-- Loading Bootstrap -->
 <script src="<? echo BASE_URL;?>core/js/jquery.js"></script>
 <link href="<? echo BASE_URL ?>core/css/style.css" rel="stylesheet">
 <link href="<? echo BASE_URL ?>core/css/color.css" rel="stylesheet">
 <link href="<? echo BASE_URL ?>core/css/responsive.css" rel="stylesheet">
-<!-- Font Awesome -->
-<link href="<? BASE_URL; ?>core/css/font-awesome.css" rel="stylesheet">
-<link href="<? BASE_URL; ?>core/css/slick.css" rel="stylesheet" type="text/css">
-<link href="<? BASE_URL; ?>core/css/slick-theme.css" rel="stylesheet" type="text/css">
-<link rel="<? BASE_URL; ?>core/shortcut icon" href="images/favicon.ico">
 
 <script src="<? echo BASE_URL;?>core/js/bootstrap.min.js"></script>
 

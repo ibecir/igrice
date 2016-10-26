@@ -6,10 +6,7 @@
 			<div class="col-md-9 col-sm-12 col-xs-12"
 				style="float: none; margin: auto;">
 
-				<iframe style="height: 512px; width: 1024px;"
-					src="http://games.gamepix.com/play/40263?sid=30057" width="1024"
-					height="512" frameborder="0" scrolling="no"></iframe>
-
+				
 			</div>
 		</div>
 	</div>
