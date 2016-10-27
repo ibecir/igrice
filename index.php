@@ -1,11 +1,11 @@
  <?php
-	header('Access-Control-Allow-Headers: *');
+	header ( 'Access-Control-Allow-Headers: *' );
 	
-	error_reporting(0);
-	ini_set('display_errors', 0);
+	error_reporting ( 0 );
+	ini_set ( 'display_errors', 0 );
 	
-	session_start();
-	header('Access-Control-Allow-Origin: *');
+	session_start ();
+	header ( 'Access-Control-Allow-Origin: *' );
 	include_once 'config.php';
 	include_once 'db/db.php';
 	
@@ -17,17 +17,22 @@
 	
 	switch ($page) {
 		case 'play' :
-			include_once 'home/play.php';
+			include_once 'pages/home/play.php';
 			break;
 		case 'admin' :
-			include_once 'home/admin.php';
-			break;
-		case '':
-			include_once 'home/index.php';
+			if (file_exists ( 'pages/admin/' . $action . '.php' )) {
+				include_once 'pages/admin/' . $action . '.php';
+				break;
+			} else {
+				include_once 'pages/index.php';
+				break;
+			}
+		case '' :
+			include_once 'pages/home/index.php';
 			break;
 		default :
-			header('Location:'.BASE_URL);
-			die;
+			header ( 'Location:' . BASE_URL );
+			die ();
 			break;
 	}
-?>
+	?>

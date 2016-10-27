@@ -12,6 +12,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php?send=$1 [L,QSA]
 
 #RewriteCond %{REQUEST_FILENAME} -f
-#RewriteRule ^(.*)$ /igrice/ [R=301]
+#RewriteRule ^(.*)$ /igrice/index.php [L,QSA]
 
 #RewriteCond %{REQUEST_URI} !\.(png|jpg|js|css|jpeg|html|htm)$

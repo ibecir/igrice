@@ -22,6 +22,22 @@ final class DB {
 		$result=$this->pdo->query("SELECT * FROM igrice")->fetchAll(PDO::FETCH_ASSOC);
 		return $result;
 	}
+	
+	public function get_all_categories(){
+		$result=$this->pdo->query("SELECT * FROM categories")->fetchAll(PDO::FETCH_ASSOC);
+		return $result;
+	}
+	
+	public function add_new_game($params){
+		print_r($params);
+		$stmt=$this->pdo->prepare("INSERT INTO games (name,game_source,icon,description,category_id) VALUES (:name,:source,:icon,:desc,:category)");
+		$stmt->bindParam(':name', $params['name']);
+		$stmt->bindParam(':source', $params['source']);
+		$stmt->bindParam(':icon', $params['image']);
+		$stmt->bindParam(':desc', $params['description']);
+		$stmt->bindParam(':category', $params['category']);
+		$stmt->execute();
+	}
 }
 
 ?>
