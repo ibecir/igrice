@@ -17,13 +17,13 @@
 	
 	switch ($page) {
 		case 'play' :
-			include_once 'home/play.php';
+			include_once 'pages/home/play.php';
 			break;
 		case 'admin' :
-			include_once 'home/admin.php';
+			include_once 'pages/admin/admin.php';
 			break;
 		case '':
-			include_once 'home/index.php';
+			include_once 'pages/home/index.php';
 			break;
 		default :
 			header('Location:'.BASE_URL);
