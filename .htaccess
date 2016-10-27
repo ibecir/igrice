@@ -8,8 +8,10 @@ Options -Indexes
 
 RewriteEngine on
 
-
-RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php?send=$1 [L,QSA]
 
-RewriteCond %{REQUEST_URI} !\.(png|jpg|js|css|jpeg|html|htm)$
+#RewriteCond %{REQUEST_FILENAME} -f
+#RewriteRule ^(.*)$ /igrice/ [R=301]
+
+#RewriteCond %{REQUEST_URI} !\.(png|jpg|js|css|jpeg|html|htm)$

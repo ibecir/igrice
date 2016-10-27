@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Font Awesome -->
-<link rel="stylesheet" type="text/css" href="<? BASE_URL; ?>core/css/font-awesome.css">
-<link rel="stylesheet" type="text/css" href="<? BASE_URL; ?>core/css/slick.css">
-<link href="<? BASE_URL; ?>core/css/slick-theme.css" rel="stylesheet" type="text/css">
-<link rel="<? BASE_URL; ?>core/shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="<?=BASE_URL?>core/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="<?=BASE_URL?>core/css/slick.css">
+<link href="<?=BASE_URL ?>core/css/slick-theme.css" rel="stylesheet" type="text/css">
+<link rel="<?=BASE_URL ?>core/shortcut icon" href="images/favicon.ico">
 
 <!-- Loading Bootstrap -->
 <script src="<? echo BASE_URL;?>core/js/jquery.js"></script>
