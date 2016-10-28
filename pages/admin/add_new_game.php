@@ -6,6 +6,7 @@ if($_POST && $_FILES ['image'] ['size'] > 0){
 	$image = file_get_contents ( $image );
 	$image = base64_encode ( $image );
 	$params=$_POST;
+	$params['source'] = htmlspecialchars($params['source']);
 	$params['image']=$image;
 	DB::Instance()->add_new_game($params);
 }

@@ -8,40 +8,52 @@
 	</div>
 	<div class="instagram-images clearfix">
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/1.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/1.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/2.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/2.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/3.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/3.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/4.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/4.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/5.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/5.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/6.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/6.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/7.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/7.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/8.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/8.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/9.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/9.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/10.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/10.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/11.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/11.jpg"
+				alt="" /></a>
 		</div>
 		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/12.jpg" alt="" /></a>
+			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/12.jpg"
+				alt="" /></a>
 		</div>
 	</div>
 	<div class="container">
@@ -61,7 +73,8 @@
 				<div class="widgets">
 
 					<div class="footer-logo">
-						<a href=""><img src="<? echo BASE_URL?>core/images/ftlogo.png" alt="" /></a>
+						<a href=""><img src="<? echo BASE_URL?>core/images/ftlogo.png"
+							alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -85,9 +98,10 @@
 			</div>
 			<div class="col-md-2 col-sm-2 col-xs-12">
 				<div class="widgets app-logos">
-					<a href=""><img src="<?php echo BASE_URL?>core/images/l1.png" alt="" /></a> <a href=""><img
-						src="<?php echo BASE_URL?>core/images/l2.png" alt="" /></a> <a href=""><img
-						src="<?php echo BASE_URL?>core/images/l3.png" alt="" /></a>
+					<a href=""><img src="<?php echo BASE_URL?>core/images/l1.png"
+						alt="" /></a> <a href=""><img
+						src="<?php echo BASE_URL?>core/images/l2.png" alt="" /></a> <a
+						href=""><img src="<?php echo BASE_URL?>core/images/l3.png" alt="" /></a>
 				</div>
 			</div>
 		</div>
@@ -111,11 +125,28 @@
 
 <!--Load JS here for greater good=============================-->
 
-<script>
+	<script>
 		$(document).ready(function(){	
 		 "use strict";
 				$('[data-toggle="tooltip"]').tooltip({placement: "left"});   
 		});
+
+		var keys = {};
+		window.addEventListener("keydown",
+		    function(e){
+		        keys[e.keyCode] = true;
+		        switch(e.keyCode){
+		            case 37: case 39: case 38:  case 40: // Arrow keys
+		            case 32: e.preventDefault(); break; // Space
+		            default: break; // do not block other keys
+		        }
+		    },
+		false);
+		window.addEventListener('keyup',
+		    function(e){
+		        keys[e.keyCode] = false;
+		    },
+		false);
 	</script>
 
 
