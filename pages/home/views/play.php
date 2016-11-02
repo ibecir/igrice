@@ -6,7 +6,7 @@
 			<div class="col-md-12 col-sm-12 col-xs-12"
 				style="float: none; margin: auto;">
 
-				<!-- Embeed game here -->
+				<!-- Insert iframe here -->
 				
 			</div>
 		</div>
