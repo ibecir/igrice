@@ -1,7 +1,8 @@
 <?php
 
-//$result=DB::Instance()->get_all_games();
-//print_r($result);
+$games = DB::Instance()->get_all_games();
+$categories = DB::Instance()->get_all_categories();
+//print_r($games);
 include_once 'includes/header.php';
 include_once 'views/index.php';
 include_once 'includes/footer.php';

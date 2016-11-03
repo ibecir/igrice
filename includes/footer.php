@@ -125,34 +125,10 @@
 
 <!--Load JS here for greater good=============================-->
 
-	<script>
+<script>
 		$(document).ready(function(){	
 		 "use strict";
 				$('[data-toggle="tooltip"]').tooltip({placement: "left"});   
-		});
-
-		var keys = {};
-		window.addEventListener("keydown",
-		    function(e){
-		        keys[e.keyCode] = true;
-		        switch(e.keyCode){
-		            case 37: case 39: case 38:  case 40: // Arrow keys
-		            case 32: e.preventDefault(); break; // Space
-		            default: break; // do not block other keys
-		        }
-		    },
-		false);
-		var ar=new Array(33,34,35,36,37,38,39,40,41);
-
-		$(document).keydown(function(e) {
-		     var key = e.which;
-		      //console.log(key);
-		      //if(key==35 || key == 36 || key == 37 || key == 39)
-		      if($.inArray(key,ar) > -1) {
-		          e.preventDefault();
-		          return false;
-		      }
-		      return true;
 		});
 	</script>
 

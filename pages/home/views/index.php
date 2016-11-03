@@ -53,18 +53,26 @@
 	</div>
 </section>
 
+<?php foreach ($categories as $category): ?>
 <div class="container position-relative">
 	<div class="slider-container">
 		<div class="small-title">
-			<h2>Sport</h2>
+			<h2><?=$category['name']?></h2>
 		</div>
 		<div class="row margin-bottom-70">
 			<div class="slick-image-slider-4 slider0  slick-slider">
-				<?php for($i=0;$i<8;$i++):?>
+				<?php
+	
+	foreach ( $games as $i => $game ) :
+		if ($game ['category_id'] != $category ['id'])
+			continue;
+		unset ( $games [$i] );
+		?>
 					<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="post-details">
 						<div class="overlay-inner-image">
-							<img src="<?php echo BASE_URL?>core/images/staff/1.png" alt="" /> <a
+							<img src="data:image/jpg;base64,<?=$game['icon'] ?>"
+								style="width: 280px; height: 260px;" alt="Games" /> <a
 								href="detailpage.html" class="inner-image-overlay"></a>
 							<div class="watch-icon" data-toggle="tooltip"
 								title="Watch on YouTube">
@@ -75,13 +83,14 @@
 						</div>
 						<div class="image-content background-color-light-green">
 							<h3>
-								<a href="">Do not look back</a>
+								<a href="<?php echo BASE_URL . 'game/play/' . $game['id']?>"><?=$game['name']?></a>
 							</h3>
 						</div>
 					</div>
 				</div>
-				<?php endfor;?>
+				<?php endforeach;?> 
 			</div>
 		</div>
 	</div>
 </div>
+<?php endforeach; ?>
