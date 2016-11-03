@@ -8,6 +8,8 @@
 
 				<!-- Insert iframe here -->
 				
+				<?=$game [0] ['game_source']?>
+				
 			</div>
 		</div>
 	</div>
