@@ -33,6 +33,14 @@ final class DB {
 		$stmt->bindParam ( ':category', $params ['category'] );
 		$stmt->execute ();
 	}
+	public function get_game_by_id($id) {
+		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE id = ?" );
+		$statement->execute ( array (
+				$id 
+		) );
+		$result = $statement->fetchAll ();
+		return $result;
+	}
 }
 
 ?>

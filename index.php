@@ -16,9 +16,18 @@
 	$id = $arr [2];
 	
 	switch ($page) {
-		case 'play' :
-			include_once 'pages/home/play.php';
-			break;
+		case 'game' :
+			if (file_exists ( 'pages/game/' . $action . '.php' )) {
+				if ($id) {
+					include_once 'pages/game/' . $action . '.php';
+					break;
+				} else
+					header ( 'Location:' . BASE_URL );
+			} else {
+				include_once 'pages/index.php';
+				break;
+			}
+		
 		case 'admin' :
 			if (file_exists ( 'pages/admin/' . $action . '.php' )) {
 				include_once 'pages/admin/' . $action . '.php';
@@ -27,6 +36,7 @@
 				include_once 'pages/index.php';
 				break;
 			}
+		
 		case '' :
 			include_once 'pages/home/index.php';
 			break;

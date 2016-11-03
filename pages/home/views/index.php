@@ -63,11 +63,11 @@
 			<div class="slick-image-slider-4 slider0  slick-slider">
 				<?php
 	
-				foreach ( $games as $i => $game ) :
-						if ($game ['category_id'] != $category ['id'])
-							continue;
-						unset ( $games [$i] );
-				?>
+	foreach ( $games as $i => $game ) :
+		if ($game ['category_id'] != $category ['id'])
+			continue;
+		unset ( $games [$i] );
+		?>
 					<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="post-details">
 						<div class="overlay-inner-image">
@@ -83,7 +83,7 @@
 						</div>
 						<div class="image-content background-color-light-green">
 							<h3>
-								<a href=""><?=$game['name']?></a>
+								<a href="<?php echo BASE_URL . 'game/play/' . $game['id']?>"><?=$game['name']?></a>
 							</h3>
 						</div>
 					</div>
