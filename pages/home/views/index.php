@@ -53,21 +53,26 @@
 	</div>
 </section>
 
-<?php foreach ($categories as $category): ?>
+
 <div class="container position-relative">
+	
+	<!-- Banner -->
+	<div class="post-advertis" style="padding-bottom: 50px;">
+		<img src="<?=BASE_URL?>core/images/banners/1170x90.jpg">
+	</div>
+	
+	<?php foreach ($categories as $category): ?>
+	<hr>
 	<div class="slider-container">
 		<div class="small-title">
 			<h2><?=$category['name']?></h2>
 		</div>
 		<div class="row margin-bottom-70">
 			<div class="slick-image-slider-4 slider0  slick-slider">
-				<?php
-	
-	foreach ( $games as $i => $game ) :
-		if ($game ['category_id'] != $category ['id'])
-			continue;
-		unset ( $games [$i] );
-		?>
+				<?php foreach ( $games as $i => $game ) :
+						if ($game ['category_id'] != $category ['id'])
+							continue;
+						unset ( $games [$i] ); ?>
 					<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="post-details">
 						<div class="overlay-inner-image">
@@ -92,5 +97,5 @@
 			</div>
 		</div>
 	</div>
+	<?php endforeach; ?>
 </div>
-<?php endforeach; ?>
