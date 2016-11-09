@@ -88,7 +88,7 @@
 						</div>
 						<div class="image-content background-color-light-green">
 							<h3>
-								<a href="<?php echo BASE_URL . 'game/play/' . $game['id']?>"><?=$game['name']?></a>
+								<a href="<?php echo BASE_URL . 'games/play/' . $game['id']?>"><?=$game['name']?></a>
 							</h3>
 						</div>
 					</div>

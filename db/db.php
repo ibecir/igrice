@@ -41,6 +41,15 @@ final class DB {
 		$result = $statement->fetchAll ();
 		return $result;
 	}
+	
+	public function get_all_games_by_category_id($id) {
+		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE category_id = ?" );
+		$statement->execute ( array (
+				$id
+		) );
+		$result = $statement->fetchAll ();
+		return $result;
+	}
 }
 
 ?>
