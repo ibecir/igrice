@@ -10,7 +10,7 @@ if($_SERVER['SERVER_ADMIN']=='postmaster@localhost'){
 else if($_SERVER['SERVER_ADMIN']=='webmaster@localhost'){
 	define(BASE_URL, "http://localhost:80/igrice/");
 	define(USERNAME, "root");
-	define(PASS, "root");
+	define(PASS, "koliko");
 	define(DB, "games");
 	define(HOST, "localhost");
 }
