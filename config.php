@@ -3,7 +3,7 @@
 if($_SERVER['SERVER_ADMIN']=='postmaster@localhost'){
 	define(BASE_URL, "http://localhost:8080/igrice/");
 	define(USERNAME, "root");
-	define(PASS, "eldiablo");
+	define(PASS, "aspireV3");
 	define(DB, "games");
 	define(HOST, "localhost");
 }
