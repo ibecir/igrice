@@ -1,5 +1,5 @@
 <?php
-$games = DB::Instance ()->get_all_games_by_category_id ( $id );
+$games = DB::Instance ()->get_all_games ();
 
 include_once 'includes/header.php';
 include_once 'views/categories.php';

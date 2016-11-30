@@ -78,7 +78,7 @@
 						<div class="overlay-inner-image">
 							<img src="data:image/jpg;base64,<?=$game['icon'] ?>"
 								style="width: 280px; height: 260px;" alt="Games" /> <a
-								href="detailpage.html" class="inner-image-overlay"></a>
+								href="<?php echo BASE_URL . 'games/play/' . $game['id']?>" class="inner-image-overlay"></a>
 							<div class="watch-icon" data-toggle="tooltip"
 								title="Watch on YouTube">
 								<a target="blank"
