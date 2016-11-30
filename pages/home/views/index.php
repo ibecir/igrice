@@ -65,7 +65,7 @@
 	<hr>
 	<div class="slider-container">
 		<div class="small-title">
-			<h2><a href="<?=BASE_URL?>games/categories/<?=$category['id']?>"><?=$category['name']?></a></h2>
+			<h2><a href="<?=BASE_URL.'games/categories/'.$category['id']?>"><?=$category['name']?></a></h2>
 		</div>
 		<div class="row margin-bottom-70">
 			<div class="slick-image-slider-4 slider0  slick-slider">
