@@ -43,9 +43,9 @@
 				<div class="col-md-8 col-sm-8 col-xs-12">
 
 					<div class="search-form clearfix">
-						<form>
+						<form method="get" action="">
 							<div class="search-field pull-left">
-								<input type="text" placeholder="Search here">
+								<input type="text" placeholder="Pretraži igrice">
 							</div>
 							<div class="search-btn pull-left">
 								<button>
