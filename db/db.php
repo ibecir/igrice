@@ -41,11 +41,18 @@ final class DB {
 		$result = $statement->fetchAll ();
 		return $result;
 	}
-	
 	public function get_all_games_by_category_id($id) {
 		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE category_id = ?" );
 		$statement->execute ( array (
-				$id
+				$id 
+		) );
+		$result = $statement->fetchAll ();
+		return $result;
+	}
+	public function get_games_by_keyword($keyword) {
+		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE name LIKE CONCAT('%',?,'%');" );
+		$statement->execute ( array (
+				$keyword 
 		) );
 		$result = $statement->fetchAll ();
 		return $result;
