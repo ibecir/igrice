@@ -78,11 +78,12 @@ final class DB {
 		return $result;
 	}
 	public function get_games_by_keyword($keyword) {
-		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE name LIKE CONCAT('%',?,'%');" );
+		$statement = $this->pdo->prepare ( $statement = $this->pdo->prepare ( "SELECT * FROM games WHERE name LIKE CONCAT('%',?,'%') OR description LIKE CONCAT('%',?,'%');" ) );
 		$statement->execute ( array (
+				$keyword,
 				$keyword
 		) );
-		$result = $statement->fetchAll ();
+		$result = $statement->fetchAll ( PDO::FETCH_ASSOC );
 		return $result;
 	}
 }
