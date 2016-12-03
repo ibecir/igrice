@@ -43,7 +43,7 @@
 				<div class="col-md-8 col-sm-8 col-xs-12">
 
 					<div class="search-form clearfix">
-						<form method="get" action="search">
+						<form method="get" action="<?=BASE_URL?>search">
 							<div class="search-field pull-left">
 								<input type="text" name="k" placeholder="Pretraži igrice">
 							</div>

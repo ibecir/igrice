@@ -1,9 +1,9 @@
 <div class="container">
 	<div class="massonary padding-top-40">
 		<div>
-			<a href="#" class="banner-big-title" style="margin-left: 30px;">
+			<p class="banner-big-title" style="margin-left: 30px;">
 				Rezultat pretrage za <strong><?=$keyword?></strong>
-			</a>
+			</p>
 			<hr>
 		</div>
 	<?php
