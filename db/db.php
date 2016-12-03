@@ -12,7 +12,7 @@ final class DB {
 		require_once dirname ( __FILE__ ) . '/../config.php';
 		$this->pdo = new PDO ( 'mysql:host=' . HOST . ';dbname=' . DB . ';charset=utf8', USERNAME, PASS, array (
 				PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
-				PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION 
+				PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 		) );
 	}
 	public function get_all_games() {
@@ -36,7 +36,7 @@ final class DB {
 	public function get_game_by_id($id) {
 		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE id = ?" );
 		$statement->execute ( array (
-				$id 
+				$id
 		) );
 		$result = $statement->fetchAll (PDO::FETCH_ASSOC);
 		return $result;
@@ -55,10 +55,11 @@ final class DB {
 		$upd_statement->bindParam(':id',$id);
 		$upd_statement->execute();
 	}
+
 	public function get_all_games_by_category_id($id) {
 		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE category_id = ?" );
 		$statement->execute ( array (
-				$id 
+				$id
 		) );
 		$result = $statement->fetchAll ();
 		$stmt=$this->pdo->prepare("SELECT name FROM categories WHERE id=?");
@@ -70,11 +71,12 @@ final class DB {
 		return $result;
 	}
 	public function get_games_by_keyword($keyword) {
-		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE name LIKE CONCAT('%',?,'%');" );
+		$statement = $this->pdo->prepare ( $statement = $this->pdo->prepare ( "SELECT * FROM games WHERE name LIKE CONCAT('%',?,'%') OR description LIKE CONCAT('%',?,'%');" ) );
 		$statement->execute ( array (
-				$keyword 
+				$keyword,
+				$keyword
 		) );
-		$result = $statement->fetchAll ();
+		$result = $statement->fetchAll ( PDO::FETCH_ASSOC );
 		return $result;
 	}
 }
