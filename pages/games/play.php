@@ -1,6 +1,5 @@
 <?php
 $game = DB::Instance ()->get_game_by_id ( $id );
-DB::Instance ()->increase_popularity($id);
 $game [0] ['game_source'] = htmlspecialchars_decode ( $game [0] ['game_source'] );
 
 include_once 'includes/header.php';
