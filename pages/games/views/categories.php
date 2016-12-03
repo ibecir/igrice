@@ -22,9 +22,7 @@
 						</h2>
 
 						<h3>
-							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 15.1K <i
-								class="fa fa-eye" aria-hidden="true"></i> 580 <span
-								class="pull-right">02:19</span>
+							<i class="fa fa-eye" aria-hidden="true"></i> <?=$game['popularity']?>
 						</h3>
 					</div>
 
