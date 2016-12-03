@@ -21,13 +21,16 @@
 				if ($id) {
 					include_once 'pages/games/' . $action . '.php';
 					break;
-				} 
-				else
+				} else
 					header ( 'Location:' . BASE_URL );
 			} else {
 				include_once 'pages/index.php';
 				break;
 			}
+		
+		case 'search' :
+			include_once 'pages/search/search.php';
+			break;
 		
 		case 'admin' :
 			if (file_exists ( 'pages/admin/' . $action . '.php' )) {

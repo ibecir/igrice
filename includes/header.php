@@ -43,12 +43,12 @@
 				<div class="col-md-8 col-sm-8 col-xs-12">
 
 					<div class="search-form clearfix">
-						<form method="get" action="">
+						<form method="get" action="search">
 							<div class="search-field pull-left">
-								<input type="text" placeholder="Pretraži igrice">
+								<input type="text" name="k" placeholder="Pretraži igrice">
 							</div>
 							<div class="search-btn pull-left">
-								<button>
+								<button type="submit"> 
 									<i class="fa fa-search"></i>
 								</button>
 							</div>
