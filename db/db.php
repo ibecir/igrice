@@ -61,6 +61,12 @@ final class DB {
 				$id 
 		) );
 		$result = $statement->fetchAll ();
+		$stmt=$this->pdo->prepare("SELECT name FROM categories WHERE id=?");
+		$stmt->execute ( array (
+				$id
+		) );
+		$res = $stmt->fetchAll (PDO::FETCH_ASSOC);
+		$result['category_name']=reset($res);
 		return $result;
 	}
 	public function get_games_by_keyword($keyword) {
