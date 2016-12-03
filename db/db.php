@@ -70,6 +70,14 @@ final class DB {
 		$result ['category_name'] = reset ( $res );
 		return $result;
 	}
+	public function get_top_games_by_category_id($id) {
+		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE category_id = ? ORDER BY popularity DESC LIMIT 3" );
+		$statement->execute ( array (
+				$id 
+		) );
+		$result = $statement->fetchAll ( PDO::FETCH_ASSOC );
+		return $result;
+	}
 	public function get_games_by_keyword($keyword) {
 		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE name LIKE CONCAT('%',?,'%') OR description LIKE CONCAT('%',?,'%');" );
 		$statement->execute ( array (
