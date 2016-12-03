@@ -39,6 +39,7 @@ final class DB {
 				$id
 		) );
 		$result = $statement->fetchAll (PDO::FETCH_ASSOC);
+		$this->increase_popularity($id);
 		return $result;
 	}
 	public function increase_popularity($id){
