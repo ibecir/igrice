@@ -55,6 +55,20 @@ final class DB {
 		$upd_statement->bindParam(':id',$id);
 		$upd_statement->execute();
 	}
+	public function increase_popularity($id){
+		$statement = $this->pdo->prepare ( "SELECT popularity FROM games WHERE id = ?" );
+		$statement->execute ( array (
+				$id
+		) );
+		$result = $statement->fetchAll (PDO::FETCH_ASSOC);
+		$result = reset($result);
+		$result=intval($result['popularity']);
+		$result=$result+1;
+		$upd_statement=$this->pdo->prepare("UPDATE games SET popularity=:pop WHERE id=:id");
+		$upd_statement->bindParam(':pop',$result);
+		$upd_statement->bindParam(':id',$id);
+		$upd_statement->execute();
+	}
 	public function get_all_games_by_category_id($id) {
 		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE category_id = ?" );
 		$statement->execute ( array (
