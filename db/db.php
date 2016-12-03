@@ -55,7 +55,22 @@ final class DB {
 		$upd_statement->bindParam(':id',$id);
 		$upd_statement->execute();
 	}
-	
+
+	public function get_all_games_by_category_id($id) {
+		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE category_id = ?" );
+		$statement->execute ( array (
+				$id
+		) );
+		$result = $statement->fetchAll ();
+		$stmt=$this->pdo->prepare("SELECT name FROM categories WHERE id=?");
+		$stmt->execute ( array (
+				$id
+		) );
+		$res = $stmt->fetchAll (PDO::FETCH_ASSOC);
+		$result['category_name']=reset($res);
+		return $result;
+	}
+
 	public function get_games_by_keyword($keyword) {
 		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE name LIKE CONCAT('%',?,'%') OR description LIKE CONCAT('%',?,'%');" );
 		$statement->execute ( array (
