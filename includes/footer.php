@@ -9,7 +9,7 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="col-md-6 col-sm-6 col-xs-12">
 				<div class="aboutus-widget widgets">
 					<div class="footer-widget-title">
 						<h3>O NAMA</h3>
@@ -20,41 +20,15 @@
 						massa vitae elit interdum sagittis.</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-4 col-xs-12">
+			<div class="col-md-6 col-sm-6 col-xs-12">
 				<div class="widgets">
-
 					<div class="footer-logo">
 						<a href=""><img src="<? echo BASE_URL?>core/images/ftlogo.png"
 							alt="" /></a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-2 col-sm-2 col-xs-12">
-				<div class="widgets">
-					<div class="footer-widget-title">
-						<h3>quick links</h3>
-					</div>
-					<div class="pages-links">
-						<ul>
-							<li><a href="">About</a></li>
-							<li><a href="">blog</a></li>
-							<li><a href="">join</a></li>
-							<li><a href="">privacy policy</a></li>
-							<li><a href="">contact</a></li>
-
-						</ul>
-
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2 col-sm-2 col-xs-12">
-				<div class="widgets app-logos">
-					<a href=""><img src="<?php echo BASE_URL?>core/images/l1.png"
-						alt="" /></a> <a href=""><img
-						src="<?php echo BASE_URL?>core/images/l2.png" alt="" /></a> <a
-						href=""><img src="<?php echo BASE_URL?>core/images/l3.png" alt="" /></a>
-				</div>
-			</div>
+			
 		</div>
 
 	</div>
