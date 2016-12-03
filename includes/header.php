@@ -56,6 +56,7 @@
 						</form>
 					</div>
 				</div>
+				<!--  Place for logo
 				<div class="col-md-4 col-sm-4 col-xs-12 text-right">
 					<div class="top-bar-upload">
 						<a href="uploadvideo.html" class="upload-video"><i
@@ -63,6 +64,7 @@
 							class="user-btn"><i class="fa fa-user"></i></a>
 					</div>
 				</div>
+				-->
 			</div>
 		</div>
 	</div>

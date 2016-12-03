@@ -9,7 +9,7 @@
 				<div class="image-container">
 					<img src="data:image/jpg;base64,<?=$game['icon'] ?>"
 						class="img-responsive" alt="" /> <a class="image-overlay"
-						href="detailpage.html"></a>
+						href="<?=BASE_URL.'games/play/'.$game['id']?>"></a>
 					<div class="watch-icon" data-toggle="tooltip" title="Watch Later">
 						<a href=""><i class="fa fa-clock-o" aria-hidden="true"></i></a>
 

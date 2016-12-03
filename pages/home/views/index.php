@@ -81,16 +81,15 @@
 					<div class="col-md-3 col-sm-3 col-xs-12">
 					<div class="image-container">
 						<img src="data:image/jpg;base64,<?=$game['icon'] ?>"
-						class="img-responsive" alt="" /> <a
+							class="img-responsive" alt="" /> <a
 							href="<?php echo BASE_URL . 'games/play/' . $game['id']?>"
 							class="inner-image-overlay"></a>
-						
+
 						<div class="overlay-likes-comments2 clearfix">
 							<h2>
 								<a href="<?=BASE_URL.'games/play/'.$game['id']?>"
 									class="banner-small-title width-100"><?=$game['name']?></a>
 							</h2>
-
 							<h3>
 								<i class="fa fa-eye" aria-hidden="true"></i> <?=$game['popularity']?>
 						</h3>
