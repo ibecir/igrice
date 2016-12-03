@@ -1,6 +1,5 @@
 <?php
 $top_games=DB::Instance()->get_top_games();
-print_r($top_games);	
 $games = DB::Instance()->get_all_games();
 $categories = DB::Instance()->get_all_categories();
 //print_r($games);

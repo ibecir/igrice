@@ -2,54 +2,29 @@
 <section id="main-slider-section" style="padding-bottom: 50px;">
 	<!--start banner section-->
 	<div id="banner-slider">
-		<div class="banner-item"
-			style="background-image: url(core/images/slider1.jpg);">
-			<img src="<?=BASE_URL?>core/images/slider1.jpg" height="500"
-				class="img-responsive" alt="" />
-			<div class="slider-over-opacity"></div>
-			<div class="container">
-				<div class="banner-stye2-content banner-style3-content">
-					<div class="clearfix">
-						<div class="banner-content-details pull-left">
-							<div class="banner-category">
-								<a href="categorymain.html" class="cat">movies</a><a
-									href="categorymain.html" class="cat">Entertainment</a>
+		<?php foreach ($top_games as $game):?>
+			<div class="banner-item">
+				<img src="<?=BASE_URL?>core/images/test_img.jpg" height="500"
+					class="img-responsive" alt="" />
+				<div class="slider-over-opacity"></div>
+				<div class="container">
+					<div class="banner-stye2-content banner-style3-content">
+						<div class="clearfix">
+							<div class="banner-content-details pull-left">
+								<div class="banner-category">
+									<a href="categorymain.html" class="cat">movies</a><a
+										href="categorymain.html" class="cat">Entertainment</a>
+								</div>
+								<h2>
+									<a href="<?=BASE_URL.'games/play/'.$game['id']?>" class="banner-big-title"><?=$game['name']?></a>
+								</h2>
 							</div>
-							<h2>
-								<a href="detailpage.html" class="banner-big-title">Always
-									somthing Good</a>
-							</h2>
-							<a href="" class="posted-by"><span>Randy Rayan</span> Randy Rayan</a>
 						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<div class="banner-item"
-			style="background-image: url(<?php echo BASE_URL?>core/images/slider2.jpg);">
-			<img src="<?=BASE_URL?>core/images/slider2.jpg" height="500"
-				class="img-responsive" alt="" />
-			<div class="slider-over-opacity"></div>
-			<div class="container">
-				<div class="banner-stye2-content banner-style3-content">
-					<div class="clearfix">
-						<div class="banner-content-details pull-left">
-							<div class="banner-category">
-								<a href="categorymain.html" class="cat">music</a><a
-									href="categorymain.html" class="cat">Entertainment</a>
-							</div>
-							<h2>
-								<a href="detailpage.html" class="banner-big-title">rio de
-									janeiro with love</a>
-							</h2>
-							<a href="" class="posted-by"><span>Randy Rayan</span> Randy Rayan
-							</a>
-						</div>
+	
 					</div>
 				</div>
 			</div>
-		</div>
+		<?php endforeach;?>
 	</div>
 </section>
 
