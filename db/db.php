@@ -38,8 +38,22 @@ final class DB {
 		$statement->execute ( array (
 				$id 
 		) );
-		$result = $statement->fetchAll ();
+		$result = $statement->fetchAll ( PDO::FETCH_ASSOC );
 		return $result;
+	}
+	public function increase_popularity($id) {
+		$statement = $this->pdo->prepare ( "SELECT popularity FROM games WHERE id = ?" );
+		$statement->execute ( array (
+				$id 
+		) );
+		$result = $statement->fetchAll ( PDO::FETCH_ASSOC );
+		$result = reset ( $result );
+		$result = intval ( $result ['popularity'] );
+		$result = $result + 1;
+		$upd_statement = $this->pdo->prepare ( "UPDATE games SET popularity=:pop WHERE id=:id" );
+		$upd_statement->bindParam ( ':pop', $result );
+		$upd_statement->bindParam ( ':id', $id );
+		$upd_statement->execute ();
 	}
 	public function get_all_games_by_category_id($id) {
 		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE category_id = ?" );
@@ -50,11 +64,12 @@ final class DB {
 		return $result;
 	}
 	public function get_games_by_keyword($keyword) {
-		$statement = $this->pdo->prepare ( "SELECT * FROM games WHERE name LIKE CONCAT('%',?,'%');" );
+		$statement = $this->pdo->prepare ( $statement = $this->pdo->prepare ( "SELECT * FROM games WHERE name LIKE CONCAT('%',?,'%') OR description LIKE CONCAT('%',?,'%');" ) );
 		$statement->execute ( array (
+				$keyword,
 				$keyword 
 		) );
-		$result = $statement->fetchAll ();
+		$result = $statement->fetchAll ( PDO::FETCH_ASSOC );
 		return $result;
 	}
 }
