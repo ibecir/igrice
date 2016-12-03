@@ -6,62 +6,13 @@
 			class="fa fa-google gplus"></i></a> <a href=""><i
 			class="fa fa-linkedin inst"></i></a>
 	</div>
-	<div class="instagram-images clearfix">
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/1.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/2.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/3.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/4.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/5.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/6.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/7.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/8.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/9.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/10.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/11.jpg"
-				alt="" /></a>
-		</div>
-		<div class="col-md-1 col-sm-1 col-xs-12 padding-0">
-			<a href=""><img src="<?php echo BASE_URL?>core/images/flicker/12.jpg"
-				alt="" /></a>
-		</div>
-	</div>
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-12">
 				<div class="aboutus-widget widgets">
 					<div class="footer-widget-title">
-						<h3>About Videofy</h3>
+						<h3>O NAMA</h3>
 					</div>
 					<p>Maecenas varius finibus orci vel dignissim. Nam posuere, magna
 						pellentesque accumsan tincid unt, libero lorem con vallis lectus
@@ -111,12 +62,11 @@
 		<div class="container clearfix">
 			<div class="pull-left">
 				<p>
-					Igrice © 2016 All Rights Reserved <span>Terms of Use</span> and <span>Privacy
-						Policy</span>
+					Igrice © 2016 Sva prava zadržana <span>Uslovi korištenja</span> i <span>Polisa privatnosti</span>
 				</p>
 			</div>
 			<div class="pull-right">
-				<p>Powered by Wordpress</p>
+				<p>Igrice</p>
 			</div>
 		</div>
 
