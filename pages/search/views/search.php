@@ -1,4 +1,16 @@
 <div class="container">
+	<?php if (count ( $games ) == 0):?>
+		<div class="massonary padding-top-40">
+		<div class="col-xs-12 alert alert-info"
+			role="alert">
+			<h2>
+				<i class="fa fa-info-circle" aria-hidden="true"></i> Nema rezultata pretrage
+			</h2>
+		</div>
+	</div>
+	<div class="container" style="padding-bottom: 300px;"></div>
+	<?php else :?>
+	
 	<div class="massonary padding-top-40">
 		<div>
 			<p class="banner-big-title" style="margin-left: 30px;">
@@ -6,11 +18,8 @@
 			</p>
 			<hr>
 		</div>
-	<?php
-	if (count ( $games ) == 0)
-		echo '<div class="col-xs-3 alert alert-info" style="margin-left: 20px;" role="alert"><h><i class="fa fa-info-circle" aria-hidden="true"></i> Molimo pokušajte drugi filter</h></div>';
-	?>
-	<div class="container" style="padding-bottom: 300px;">
+
+		<div class="container" style="padding-bottom: 50px;">
 			<div class="row">
 		<?php
 		foreach ( $games as $game ) :
@@ -44,4 +53,5 @@
 		</div>
 		</div>
 	</div>
+	<?php endif;?>
 </div>
