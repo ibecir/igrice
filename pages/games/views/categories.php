@@ -1,9 +1,13 @@
-<div class="massonary padding-top-70">
-
-	<div class="container padding-bottom-50">
-		<div class="row">
-			<h2 style=""><?=$categry_name?></h2>
+<div class="container">
+	<div class="massonary padding-top-40">
+		<div>
+			<p class="banner-big-title" style="margin-left: 30px;">
+				<strong><?=$categry_name?></strong>
+			</p>
+			<hr>
 		</div>
+	</div>
+	<div class="container padding-bottom-50">
 		<div class="row">
 		<?php foreach ($games as $game):?>
 			<div class="col-md-3">
