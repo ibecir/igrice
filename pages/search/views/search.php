@@ -18,9 +18,9 @@
 			</p>
 			<hr>
 		</div>
-
-		<div class="container" style="padding-bottom: 50px;">
-			<div class="row">
+	</div>
+	<div class="container" style="padding-bottom: 50px;">
+		<div class="row">
 		<?php foreach ($games as $game):?>
 			<div class="col-md-3">
 
@@ -47,7 +47,6 @@
 				</div>
 			</div>
 		<?php endforeach;?>
-		</div>
 		</div>
 	</div>
 	<?php endif;?>
